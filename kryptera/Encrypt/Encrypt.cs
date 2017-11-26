@@ -1,17 +1,17 @@
 ﻿namespace kryptera.Encrypt
 {
-    public class Encrypt
+    internal sealed class Encrypt
     {
         private readonly ICharReader charReader;
         private readonly ICharWriter charWriter;
 
-        public Encrypt(ICharReader charReader, ICharWriter charWriter)
+        internal Encrypt(ICharReader charReader, ICharWriter charWriter)
         {
             this.charReader = charReader;
             this.charWriter = charWriter;
         }
 
-        public void Run()
+        internal void Run()
         {
             var next = charReader.Read();
             while (next != '\0')

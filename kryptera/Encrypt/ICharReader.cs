@@ -1,6 +1,6 @@
 ﻿namespace kryptera.Encrypt
 {
-    public interface ICharReader
+    internal interface ICharReader
     {
         char Read();
     }

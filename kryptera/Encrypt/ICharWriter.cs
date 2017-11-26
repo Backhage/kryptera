@@ -1,6 +1,6 @@
 ﻿namespace kryptera.Encrypt
 {
-    public interface ICharWriter
+    internal interface ICharWriter
     {
         void Write(char c);
     }
